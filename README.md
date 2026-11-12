@@ -1,4 +1,4 @@
-# Automação de Invoice e Packing List (Satake)
+# Automação de Invoice e Packing List (Comex)
 
 Gera a Commercial Invoice (CI) e o Packing List (PL) em Excel, no layout da Satake, a partir das proformas em `.odt`.
 
