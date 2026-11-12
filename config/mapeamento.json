@@ -1,0 +1,115 @@
+{
+  "_leia": "Campo -> aba/célula, sempre nas coordenadas do TEMPLATE (antes de inserir os itens; o rodapé é deslocado sozinho). 'rotulo' sai em negrito e 'valor' em fonte normal na mesma célula; sem 'rotulo' a célula recebe só 'valor'. {chave} vem do contexto montado em gerar.py. Valor ausente vira o marcador_pendente.",
+  "template": "template/satake_template.xlsx",
+  "marcador_pendente": "[COMPLETAR]",
+  "remover_abas": ["Planilha1"],
+
+  "layout": {
+    "CI": {
+      "aba": "CI",
+      "inicio_itens": 25,
+      "modelo_grupo": 25,
+      "modelo_item": 26,
+      "linha_total": 35,
+      "ultima_linha_impressao": 52,
+      "colunas_impressao": "A:I",
+      "formulas_total": {"I": "SUM"}
+    },
+    "PL": {
+      "aba": "PL",
+      "inicio_itens": 26,
+      "modelo_grupo": 26,
+      "modelo_item": 33,
+      "linha_total": 37,
+      "ultima_linha_impressao": 52,
+      "colunas_impressao": "A:K",
+      "formulas_total": {"G": "SUM", "H": "SUM", "J": "SUM"}
+    }
+  },
+
+  "grupo": {"A": "Proforma: {proforma.numero_exibido}"},
+
+  "itens": {
+    "CI": {
+      "A": "{item.seq}",
+      "B": "{item.codigo}",
+      "C": "{item.cantidad}",
+      "D": "Unit",
+      "E": "{item.descripcion}",
+      "H": "{item.valor_unitario}",
+      "I": "=H{linha}*C{linha}"
+    },
+    "PL": {
+      "A": "{item.pl.caja}",
+      "B": "=CI!B{linha_ci}",
+      "C": "=CI!E{linha_ci}",
+      "F": "=CI!C{linha_ci}",
+      "G": "{item.pl.peso_neto}",
+      "H": "{item.pl.peso_bruto}",
+      "I": "{item.pl.dimension}",
+      "J": "{item.pl.m3}",
+      "K": "{item.ncm}"
+    }
+  },
+
+  "campos": [
+    {"aba": "CI", "celula": "G5",  "valor": "Commercial Invoice: {numero_invoice}"},
+    {"aba": "CI", "celula": "B8",  "valor": "{cliente.nombre}"},
+    {"aba": "CI", "celula": "B9",  "valor": "{cliente.direccion}"},
+    {"aba": "CI", "celula": "B10", "valor": "{cliente.ciudad}"},
+    {"aba": "CI", "celula": "B11", "valor": "RUC: {cliente.ruc}"},
+    {"aba": "CI", "celula": "B12", "valor": "Attn.: {cliente.attn}"},
+    {"aba": "CI", "celula": "B13", "valor": "Fono: {cliente.fono}"},
+    {"aba": "CI", "celula": "C13", "valor": "{cliente.email}", "opcional": true},
+    {"aba": "CI", "celula": "B15", "rotulo": "Proforma: ", "valor": "{proformas_compuesto}"},
+    {"aba": "CI", "celula": "G7",  "rotulo": "Local y Fecha de Emisión: ", "valor": "{lugar_fecha}"},
+    {"aba": "CI", "celula": "G8",  "rotulo": "Origen: ", "valor": "{origen}"},
+    {"aba": "CI", "celula": "G9",  "rotulo": "Destino: ", "valor": "{destino}"},
+    {"aba": "CI", "celula": "G10", "rotulo": "Moneda: ", "valor": "{moneda}"},
+    {"aba": "CI", "celula": "G11", "rotulo": "Condición de pago: ", "valor": "{condicion_pago}"},
+    {"aba": "CI", "celula": "G13", "rotulo": "Vía de Embarque: ", "valor": "{via_embarque}"},
+    {"aba": "CI", "celula": "G15", "rotulo": "Marca: ", "valor": "{marca}"},
+    {"aba": "CI", "celula": "B20", "valor": "Banco Beneficiario: {banco.beneficiario_banco}"},
+    {"aba": "CI", "celula": "B21", "valor": "IBAN: {banco.iban}"},
+    {"aba": "CI", "celula": "B22", "valor": "Beneficiario: {banco.beneficiario}"},
+    {"aba": "CI", "celula": "B23", "valor": "CNPJ: {empresa.cnpj}"},
+    {"aba": "CI", "celula": "B37", "valor": "Consignatario / Notificar:"},
+    {"aba": "CI", "celula": "B38", "valor": "{consignatario.nombre}"},
+    {"aba": "CI", "celula": "B39", "valor": "{consignatario.direccion}"},
+    {"aba": "CI", "celula": "B40", "valor": "{consignatario.ciudad}"},
+    {"aba": "CI", "celula": "B41", "valor": "RUC: {consignatario.ruc}"},
+    {"aba": "CI", "celula": "B42", "valor": "Attn.: {consignatario.attn}"},
+    {"aba": "CI", "celula": "B43", "valor": "Fono: {consignatario.fono}"},
+    {"aba": "CI", "celula": "H37", "rotulo": "Peso Neto: ", "valor": "{peso_neto} kg."},
+    {"aba": "CI", "celula": "H38", "rotulo": "Peso Bruto: ", "valor": "{peso_bruto} kg."},
+    {"aba": "CI", "celula": "H39", "rotulo": "Cantidad de Cajas: ", "valor": "{cajas} cajas de Madera."},
+    {"aba": "CI", "celula": "F49", "valor": "CNPJ: {empresa.cnpj}"},
+
+    {"aba": "PL", "celula": "A5",  "valor": "Packing List nº {numero_invoice}"},
+    {"aba": "PL", "celula": "B10", "valor": "{cliente.nombre}"},
+    {"aba": "PL", "celula": "B11", "valor": "{cliente.direccion}"},
+    {"aba": "PL", "celula": "B12", "valor": "{cliente.ciudad}"},
+    {"aba": "PL", "celula": "B13", "valor": "RUC: {cliente.ruc}"},
+    {"aba": "PL", "celula": "B14", "valor": "Attn.: {cliente.attn}"},
+    {"aba": "PL", "celula": "B15", "valor": "Fono: {cliente.fono}"},
+    {"aba": "PL", "celula": "C15", "valor": "{cliente.email}", "opcional": true},
+    {"aba": "PL", "celula": "B16", "rotulo": "Factura Comercial: ", "valor": "{numero_invoice}"},
+    {"aba": "PL", "celula": "B23", "valor": "Proforma: {proformas_compuesto}"},
+    {"aba": "PL", "celula": "H11", "valor": "{destino_marca}"},
+    {"aba": "PL", "celula": "H12", "valor": "{numero_invoice}"},
+    {"aba": "PL", "celula": "H13", "valor": "C. Nº 01/{cajas_2d}"},
+    {"aba": "PL", "celula": "H18", "rotulo": "Origen: ", "valor": "{origen}"},
+    {"aba": "PL", "celula": "H19", "rotulo": "Destino: ", "valor": "{destino}"},
+    {"aba": "PL", "celula": "H20", "rotulo": "Condición de pago: ", "valor": "{condicion_pago}",
+     "mesclar": "H20:K22", "quebrar_texto": true},
+    {"aba": "PL", "celula": "A37", "valor": "TOTAL: {cajas} cajas de Madera"},
+    {"aba": "PL", "celula": "B39", "valor": "Consignatario / Notificar:"},
+    {"aba": "PL", "celula": "B40", "valor": "{consignatario.nombre}"},
+    {"aba": "PL", "celula": "B41", "valor": "{consignatario.direccion}"},
+    {"aba": "PL", "celula": "B42", "valor": "{consignatario.ciudad}"},
+    {"aba": "PL", "celula": "B43", "valor": "RUC: {consignatario.ruc}"},
+    {"aba": "PL", "celula": "B44", "valor": "Attn.: {consignatario.attn}"},
+    {"aba": "PL", "celula": "B45", "valor": "Fono: {consignatario.fono}"},
+    {"aba": "PL", "celula": "G50", "valor": "CNPJ: {empresa.cnpj}"}
+  ]
+}

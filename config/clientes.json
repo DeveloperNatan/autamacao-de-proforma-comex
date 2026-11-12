@@ -1,0 +1,12 @@
+{
+  "_leia": "Cadastro por RUC. nombre/direccion/ciudad são opcionais e, se presentes, substituem a grafia da proforma. 'consignatario' omitido = igual ao cliente.",
+  "0990990018001": {
+    "nombre": "Disquisa S.A.",
+    "direccion": "Km 8 via Duran Yaguachi",
+    "ciudad": "Duran, Ecuador",
+    "attn": "Jennifer Vera J",
+    "fono": "593 4 3713500",
+    "email": null,
+    "destino": "Guayaquil - Ecuador"
+  }
+}

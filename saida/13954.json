@@ -1,0 +1,114 @@
+[
+  {
+    "arquivo": "Proforma 13954R1_DISQUISA_Ecuador.odt",
+    "numero": "13954R1",
+    "numero_base": "13954",
+    "revisao": "R1",
+    "fecha_emision": "01/09/2026",
+    "validez": "14 Días",
+    "cliente": {
+      "nombre": "DISQUISA S.A.",
+      "direccion": "KM 8 VIA DURAN YAGUACHI, 0 ALADO DELAS BODEGAS AZUCARERAVALDEZ",
+      "ciudad": "DURAN, ECUADOR",
+      "ruc": "0990990018001"
+    },
+    "condicion_pago": "100% anticipado a la firma de contrato",
+    "fecha_entrega": "A combinar",
+    "banco": {
+      "intermediario": "MUFG Bank, Ltd. NEW YORK Branch, SWIFT: BOTKUS33, ABA: 026009632, Cuenta corriente: 37004014",
+      "beneficiario_banco": "BANCO MUFG BRASIL S.A., SWIFT: BOTKBRSX, Cuenta corriente: 002 01.0004723.6",
+      "iban": "BR9660498557000020100047236C1",
+      "beneficiario": "Satake América Latina Ltda"
+    },
+    "itens": [
+      {
+        "codigo": "S014030",
+        "descripcion": "CONJUNTO TELA ST1037R-L #12 F24",
+        "ncm": "84379000",
+        "cantidad": 2.0,
+        "valor_unitario": 788.2,
+        "desconto": 0.0,
+        "valor_total": 1576.4
+      },
+      {
+        "codigo": "S014020",
+        "descripcion": "CONJUNTO TELA ST1037R-L #8 F22",
+        "ncm": "84379000",
+        "cantidad": 6.0,
+        "valor_unitario": 776.7,
+        "desconto": 0.0,
+        "valor_total": 4660.2
+      },
+      {
+        "codigo": "250123200L",
+        "descripcion": "DISTRIBUIDOR ESQUERDO",
+        "ncm": "84379000",
+        "cantidad": 2.0,
+        "valor_unitario": 578.8,
+        "desconto": 0.0,
+        "valor_total": 1157.6
+      },
+      {
+        "codigo": "250123250L",
+        "descripcion": "DISTRIBUIDOR DIREITO",
+        "ncm": "84379000",
+        "cantidad": 2.0,
+        "valor_unitario": 576.2,
+        "desconto": 0.0,
+        "valor_total": 1152.4
+      },
+      {
+        "codigo": "T014334",
+        "descripcion": "SUPORTE EIXO SUPERIOR FC20",
+        "ncm": "84379000",
+        "cantidad": 3.0,
+        "valor_unitario": 236.0,
+        "desconto": 0.0,
+        "valor_total": 708.0
+      },
+      {
+        "codigo": "9130010138",
+        "descripcion": "CONJUNTO ENGRENAGEM DE TRANSMISSAO",
+        "ncm": "84379000",
+        "cantidad": 10.0,
+        "valor_unitario": 24.39,
+        "desconto": 0.0,
+        "valor_total": 243.9
+      },
+      {
+        "codigo": "S20280350",
+        "descripcion": "CALHA HU10SSA-L1",
+        "ncm": "84379000",
+        "cantidad": 2.0,
+        "valor_unitario": 57.2,
+        "desconto": 0.0,
+        "valor_total": 114.4
+      },
+      {
+        "codigo": "S20329130",
+        "descripcion": "CALHA INOX304 ENTRADA HU10FHC",
+        "ncm": "84379000",
+        "cantidad": 2.0,
+        "valor_unitario": 64.0,
+        "desconto": 0.0,
+        "valor_total": 128.0
+      },
+      {
+        "codigo": "220310130L",
+        "descripcion": "POLIA MOTOR HU10FHC Ø160MM - 60HZ",
+        "ncm": "84835010",
+        "cantidad": 2.0,
+        "valor_unitario": 352.6,
+        "desconto": 0.0,
+        "valor_total": 705.2
+      }
+    ],
+    "totais": {
+      "total_items": 10446.1,
+      "flete": 0.0,
+      "seguro": 0.0,
+      "total_exw": 10446.1,
+      "incoterm": "Total EXW Joinville/SC INCOTERMS® 2020"
+    }
+  }
+]

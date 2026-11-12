@@ -1,0 +1,20 @@
+{
+  "_leia": "Campos manuais desta invoice. Tudo é opcional: o que faltar sai como [COMPLETAR] no XLSX e aparece na lista de avisos.",
+  "fecha_emision": "2026-11-12",
+  "via_embarque": "MARÍTIMO",
+  "destino": null,
+  "destino_marca": null,
+  "condicion_pago": null,
+  "numero_invoice": null,
+  "manter_revisao": false,
+  "traducir": true,
+  "consignatario": null,
+  "peso_neto_kg": null,
+  "peso_bruto_kg": null,
+  "cajas": null,
+  "itens_pl": {
+    "13954": {
+      "S014030": {"caja": 1, "peso_neto": null, "peso_bruto": null, "dimension": null, "m3": null}
+    }
+  }
+}

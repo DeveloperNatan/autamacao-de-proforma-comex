@@ -1,0 +1,12 @@
+{
+  "_leia": "Valores fixos da Satake, iguais para toda invoice.",
+  "prefixo_invoice": "SAL",
+  "manter_revisao": false,
+  "lugar_emision": "Joinville/Brasil",
+  "origen": "Joinville - Brasil",
+  "moneda": "US$",
+  "marca": "SATAKE",
+  "empresa": {
+    "cnpj": "03.483.185/0001-20"
+  }
+}
